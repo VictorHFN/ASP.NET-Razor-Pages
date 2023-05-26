@@ -10,6 +10,14 @@
 <p>
     <a asp-page="Create">Create New</a>
 </p>
+
+    <form>
+        <p>
+            Buscar Filme: <input type="texte" asp-for="TermoBusca" />
+            <input type="submit" value="Buscar" />
+        </p>
+    </form>
+
 <table class="table">
     <thead>
         <tr>
@@ -43,10 +51,12 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Preco)
             </td>
+           @* asp-page passa o nome do arquivo
+            asp-rout-id chama o nome do campo*@
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Editar</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Detalhes</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Apagar</a>
             </td>
         </tr>
 }
