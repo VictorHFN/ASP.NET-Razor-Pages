@@ -8,11 +8,14 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Adicionar filme</a>
 </p>
 
     <form>
         <p>
+        <select asp-for="FilmeGenero" asp-items="@Model.Generos">
+            <option value="">Todos</option>
+        </select>
             Buscar Filme: <input type="texte" asp-for="TermoBusca" />
             <input type="submit" value="Buscar" />
         </p>
