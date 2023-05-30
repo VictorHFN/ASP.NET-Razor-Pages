@@ -12,5 +12,6 @@ namespace RazorPagesFilmes2.Model
         public DateTime DataLancamento { get; set; }
         public string Genero { get; set; } = string.Empty;
         public decimal Preco { get; set; }
+        public int Pontos { get; set; } = 0;
     }
 }

@@ -36,8 +36,14 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Filme.Preco)
         </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Filme.Pontos)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Filme.Pontos)
+        </dd>
     </dl>
-    
+
     <form method="post">
         <input type="hidden" asp-for="Filme.ID" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |

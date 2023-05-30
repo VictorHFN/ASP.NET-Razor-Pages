@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RazorPagesFilmes2.Data;
 
@@ -11,9 +12,10 @@ using RazorPagesFilmes2.Data;
 namespace RazorPagesFilmes2.Migrations
 {
     [DbContext(typeof(RazorPagesFilmes2Context))]
-    partial class RazorPagesFilmes2ContextModelSnapshot : ModelSnapshot
+    [Migration("20230527003916_adicionando ponto")]
+    partial class adicionandoponto
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
